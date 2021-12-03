@@ -1,0 +1,59 @@
+--Create Employee Table
+Create Table Employees (
+ID int NOT NULL,
+NAME varchar(20),
+SALARY int,
+Unique (ID)
+--Foreign Key (ID) REFERENCES Person(PersonId)
+);
+--Add Data to Table Employee
+Insert into Employees (ID,NAME,SALARY) values (1,'Tarun',5000);
+Insert into Employees (ID,NAME,SALARY) values (2,'Prakash',1000);
+Insert into Employees (ID,NAME,SALARY) values (3,'Gaurav',6000);
+Insert into Employees (ID,NAME,SALARY) values (4,'Deepesh',3000);
+Insert into Employees (ID,NAME,SALARY) values (5,'Pratik',4000);
+Insert into Employees (ID,NAME,SALARY) values (6,'Pratik',4000);
+
+Select * from employees order by SALARY DESC;
+
+--Query to find duplicate rows in a table
+--OR
+--Query to count salaries in Employee table
+Select Salary, Count(salary) FROM Employees group by Salary;
+Select Salary, Count(salary) as CNT FROM Employees group by Salary;
+Select Salary, CNT from (Select Salary, Count(salary) as CNT FROM Employees group by Salary) where CNT>1;
+--Greate Alternative of above query
+Select Salary, Count(Salary) from Employees group by Salary Having Count(Salary)>1;
+Select Salary, Count(Salary) as CNT from Employees group by Salary Having Count(Salary)>1;
+
+--Query to find even or odd records form a Employee (IDs are even and odd)
+Select * from employees where MOD(ID,2)=0;
+Select * from employees where MOD(ID,2)=1;
+
+--Display first and Last Records from Employees
+Select * from Employees where id=(Select MIN(id) from Employees);
+Select * from Employees where id=(Select MAX(id) from Employees);
+
+--Copying all rows or duplicating a table
+Create Table EmplyoeesBKP as Select * from Employees;
+--Creating duplicate table withoud data in it
+Create Table EmployeesBKP2 as Select * from Employees where 1=2;
+
+--Query to retrieve list of employees having same name or same salary or any same details
+Select DISTINCT E.ID, E.NAME, E.SALARY from employees E, employees E1
+where E.ID!=E1.ID and E.NAME=E1.NAME;
+
+Select  E.ID, E.NAME, E.SALARY from employees E, employees E1
+where E.ID!=E1.ID AND E.SALARY=E1.SALARY;
+--OUTPUT IS
+--ID  NAME    SALARY
+--5	Pratik	4000
+--6	Pratik	4000
+
+--if remove DISTINCT OUTPUT will be Same, but if include * instead of COLUMN names then
+Select * from employees E, employees E1
+where E.ID!=E1.ID AND E.SALARY=E1.SALARY;
+--OUTPUT is
+--ID  NAME    SALARY  ID_1  NAME_1  SALRY_1
+--6	  Pratik	4000	5	Pratik	4000
+--5	  Pratik	4000	6	Pratik	4000

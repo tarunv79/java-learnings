@@ -2,6 +2,7 @@ package java8learnings;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.function.*;
 
 public class CollectionLearning {
     public static void main(String[] args) {
