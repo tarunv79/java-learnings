@@ -45,6 +45,8 @@ public class LambdaExpressions {
         FITR<Integer,String> myInterfaceTR = (r)-> Integer.parseInt(r);
         System.out.println(myInterfaceTR.execute("6"));
 
+
+
     }
 
     @FunctionalInterface
