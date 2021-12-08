@@ -5,7 +5,8 @@ public class Queue {
         Object object;
         Node next;
         public Node(Object o){
-            this.object=o;
+            this.object = o;
+            this.next = null;
         }
     }
 
@@ -14,29 +15,22 @@ public class Queue {
 
     public Object enqueue(Object o){
         Node node = new Node(o);
-        if(front == null){
-            front = node;
-            rear = front;
-            return front.object;
-        } else if(front==rear){
-            rear = node;
-            front.next = rear;
-            rear.next=front;
-        } else {
-            Node temp = rear;
-            rear = node;
-            temp.next=rear;
-            rear.next = temp;
+        if(rear==null){
+            front=rear=node;
         }
-        return rear.object;
+        rear.next=node;
+        rear=node;
+        return node.object;
     }
     public Object dequeue(){
         if(front==null)
             return -1;
 
         Object o = front.object;
-        Node temp = front.next;
-        front = temp;
+        front = front.next;
+        if(front==null){
+            rear = null;
+        }
         return o;
     }
     public Object peek() {

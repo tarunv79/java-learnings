@@ -13,8 +13,24 @@ public class Test{
         System.out.println(Arrays.toString(bits));
 
         BitSet bitSet = new BitSet();
-        //bitSet.
+
+
+        int[] inta = new int[]{1,4,2,5};
+        int len = 5;
+        int[] i = new int[len];
+        i = new int[]{1, 2, 3, 4, 2};
+
+        char[] c = new char[]{'a','1','-','!','@','#','$','%','/','=','\''};
+        for (char a:c ) {
+            System.out.println(a);
+        }
+
+        System.out.println('\'');
+        System.out.println("/");
+
     }
+
+
 }
 abstract class ABC{
     ABC(){
