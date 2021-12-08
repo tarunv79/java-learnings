@@ -7,7 +7,8 @@ import java.util.Scanner;
 
 public class TryWithResources {
     public static void main(String[] args)  {
-        try(Scanner sc = new Scanner(new File("src/main/java/exceptionhandling/input.txt"));
+        try(
+            Scanner sc = new Scanner(new File("src/main/java/exceptionhandling/input.txt"));
             PrintWriter print = new PrintWriter(new File("src/main/java/exceptionhandling/output.txt"))
         ){
             while (sc.hasNext()){
