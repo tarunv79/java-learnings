@@ -19,7 +19,7 @@ public class Samsung2 {
         StringBuilder sb = new StringBuilder();
 
         //String input = "1234567";
-        String input = "500";
+        String input = "-4500";
         int in = Integer.parseInt(input);
         String output = convert2(in);
         System.out.println(output);
@@ -51,6 +51,17 @@ public class Samsung2 {
             convert(in/1000);
         }
         return ",";
+    }
+
+
+    //1234567 -> 1,234,567
+
+    private static String convert3(int in){
+        if(in<1000){
+            return in+"";
+        }
+        int rem = in%1000;
+        return convert3(in/1000) + "," + rem;
     }
 
 

@@ -36,6 +36,8 @@ public class Basic {
         char set[] = {'a', 'b', 'c'};
         printSubsets(set);
 
+        String s = 5 + "?";
+        System.out.println(s);
 
         if(new Basic() instanceof Cloneable){
 
