@@ -40,9 +40,20 @@ public class Basic {
         System.out.println(s);
 
         if(new Basic() instanceof Cloneable){
-
         }
 
+        /*
+          ASCII Table
+        0 -> 48
+        A -> 65
+        a -> 97
+         */
+        System.out.println("converting chars ASCII::");
+        char c1 = 'c';
+        char c2 = (char) ('A' - 'a' + c1);
+        System.out.println(c2);
+        char c3 = (char) ('a' - 'A' + c2);
+        System.out.println(c3);
     }
 
     static void printSubsets(char set[])
