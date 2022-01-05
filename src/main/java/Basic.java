@@ -81,3 +81,36 @@ public class Basic {
         }
     }
 }
+/*
+Output:
+a
+1
+-
+!
+@
+#
+$
+%
+/
+=
+'
+"
+'
+/
+print "this" in quotes
+\
+5
+20
+{ }
+{ a }
+{ b }
+{ a b }
+{ c }
+{ a c }
+{ b c }
+{ a b c }
+5?
+converting chars ASCII::
+C
+c
+ */

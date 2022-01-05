@@ -53,3 +53,28 @@ class XYZ extends ABC{
         System.out.println("in xyz");
     }
 }
+
+/*
+
+Output:
+
+this is ABC class constructor
+this is XYZ class constructor
+in xyz
+
+[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+a
+1
+-
+!
+@
+#
+$
+%
+/
+=
+'
+'
+/
+
+ */

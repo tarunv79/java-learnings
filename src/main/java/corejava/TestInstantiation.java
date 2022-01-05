@@ -5,6 +5,19 @@ import java.util.Objects;
 
 public class TestInstantiation {
 
+    /*
+
+    output:
+class A method m1
+10
+null
+method of Integer
+method of int
+method of Integer
+method of Object
+
+     */
+
     public static void main(String[] args) {
         A a = new B();
         a.m1();
@@ -19,6 +32,9 @@ public class TestInstantiation {
         C c = new C();
         //c.a((Integer) null);
         c.a( null);
+        c.a(2);
+        c.a(new Integer(8));
+        c.a("Hello");
     }
 
 
@@ -63,9 +79,12 @@ class B extends A{
 }
 class C {
     public void a(Object s){
-        System.out.println("method a");
+        System.out.println("method of Object");
     }
     public void a(Integer o){
-        System.out.println("method b");
+        System.out.println("method of Integer");
+    }
+    public void a(int i){
+        System.out.println("method of int");
     }
 }

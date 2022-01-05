@@ -27,3 +27,21 @@ public class Main {
 
     }
 }
+/*
+Output:
+every car has 4 tyres
+I have overridden default airbags method
+White BMW
+this is shape of Bmw
+this is another default method
+1
+3
+4
+corejava.oops.Bmw
+corejava.oops.Bmw@4dc63996
+corejava.oops.Bmw@4dc63996
+1304836502
+true
+class corejava.oops.Bmw
+4dc63996
+ */

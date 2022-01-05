@@ -5,6 +5,7 @@ public class Misc {
         System.out.println(10+20+30+"str");
         System.out.println("str"+10+20+30);
         System.out.println(10.2+20+30+"str");
+        System.out.println(10+20.2+30+"str");
         System.out.println(20.2+10+"Str"+10+20+40);
 
 
@@ -16,3 +17,12 @@ public class Misc {
         }
     }
 }
+/*
+Output:
+60str
+str102030
+60.2str
+60.2str
+30.2Str102040
+hi
+ */

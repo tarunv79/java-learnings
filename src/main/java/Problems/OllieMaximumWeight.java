@@ -13,6 +13,9 @@ For example, given barbell plates of weights of 1, 3 and 5 lbs and a
 barbell of maximum capacity 7 lbs — the right plates to insert
 would be 1 and 5 lbs (1+5 = 6), thus making the right answer 6.
 
+[1,3,5,4,6,8,9]
+12
+
  */
 public class OllieMaximumWeight {
 }
