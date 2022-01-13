@@ -15,7 +15,7 @@ public class ConstantFormatConversion {
      */
 
     public static void main(String[] args) {
-        String in = "my_code__name_";
+        String in = "my_code___name_";
 
         System.out.println(convert2(in));
     }

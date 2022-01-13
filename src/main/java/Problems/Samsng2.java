@@ -2,7 +2,7 @@ package Problems;
 
 import java.util.Stack;
 
-public class Samsung2 {
+public class Samsng2 {
 
     /*
 

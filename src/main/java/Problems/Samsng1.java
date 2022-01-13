@@ -3,7 +3,7 @@ package Problems;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Samsung {
+public class Samsng1 {
 
     /*
     1. Input - Two sorted arrays (int[] a, int[] b) Output -

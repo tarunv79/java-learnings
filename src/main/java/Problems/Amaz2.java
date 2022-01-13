@@ -17,7 +17,7 @@ package Problems;
 
  */
 
-public class Amazon2 {
+public class Amaz2 {
     public static void main(String[] args) {
 
         int[] input = new int[]{4,8,210,2,90,45,300};

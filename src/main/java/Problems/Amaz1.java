@@ -1,7 +1,5 @@
 package Problems;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 /*
 	- Program to find the output
             ○ Given a string of parenthesis - ()()(()(()(())))
@@ -12,7 +10,7 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
             ()()(()())
             (((())))
 */
-public class Amazon1 {
+public class Amaz1 {
     public static void main(String[] args) {
         String s = "(())";
 
